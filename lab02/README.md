@@ -12,7 +12,7 @@ grading script.
 ALL work for Part 1 must be created under:
 
 ```
-~/linux_lab
+~/linux_lab2
 ```
 
 ---
@@ -23,14 +23,14 @@ Run the following commands exactly:
 
 ```
 cd ~
-mkdir -p linux_lab/projects/week1
-mkdir linux_lab/notes
+mkdir -p linux_lab2/projects/week1
+mkdir linux_lab2/notes
 ```
 
 Verify your work:
 
 ```
-ls -R linux_lab
+ls -R linux_lab2
 ```
 
 ---
@@ -40,22 +40,22 @@ ls -R linux_lab
 Create a file named intro.txt:
 
 ```
-touch linux_lab/intro.txt
+touch linux_lab2/intro.txt
 ```
 
 Edit the file using nano:
 
 ```
-nano linux_lab/intro.txt
+nano linux_lab2/intro.txt
 ```
 
 Add the following content (fill in your information):
-
+```
 Name: YOUR NAME
 Course: CNG 2001
 Lab: Linux Filesystem Exploration
 Date: YYYY-MM-DD
-
+```
 Save and exit nano:
 CTRL + O, Enter
 CTRL + X
@@ -67,9 +67,9 @@ CTRL + X
 Run the following commands:
 
 ```
-cat linux_lab/intro.txt
-nl linux_lab/intro.txt
-less linux_lab/intro.txt
+cat linux_lab2/intro.txt
+nl linux_lab2/intro.txt
+less linux_lab2/intro.txt
 ```
 
 (Press q to quit less)
@@ -81,14 +81,13 @@ less linux_lab/intro.txt
 Copy intro.txt into the week1 directory:
 
 ```
-cp linux_lab/intro.txt linux_lab/projects/week1/
+cp linux_lab2/intro.txt linux_lab2/projects/week1/
 ```
 
 Rename the copied file:
 
 ```
-mv linux_lab/projects/week1/intro.txt \
- linux_lab/projects/week1/project_intro.txt
+mv linux_lab2/projects/week1/intro.txt linux_lab2/projects/week1/project_intro.txt
 ```
 
 ---
@@ -98,25 +97,25 @@ mv linux_lab/projects/week1/intro.txt \
 Create a temporary notes file:
 
 ```
-touch linux_lab/notes/notes.txt
+touch linux_lab2/notes/notes.txt
 ```
 
 Move the notes file into the week1 directory:
 
 ```
-mv linux_lab/notes/notes.txt linux_lab/projects/week1/
+mv linux_lab2/notes/notes.txt linux_lab2/projects/week1/
 ```
 
 Delete the notes file:
 
 ```
-rm linux_lab/projects/week1/notes.txt
+rm linux_lab2/projects/week1/notes.txt
 ```
 
 Remove the now-empty notes directory:
 
 ```
-rmdir linux_lab/notes
+rmdir linux_lab2/notes
 ```
 
 ---
@@ -129,14 +128,14 @@ From the course repository directory:
 
 ```
 cd ~/FRCC_CNG_2001
-chmod +x grade_lab1.sh
-./grade_lab1.sh
+chmod +x grade_lab2.sh
+./grade_lab2.sh
 ```
 
 The script will create a results file:
 
 ```
-lab1*results*<yourusername>.txt
+lab2_results_<yourusername>.txt
 ```
 
 This file is REQUIRED for submission.
