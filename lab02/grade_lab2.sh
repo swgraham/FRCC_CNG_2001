@@ -1,24 +1,17 @@
-
----
-
-# ✅ `grade_lab1.sh`  
-*(Same script logic — ready to live in the repo root)*
-
-```bash
 #!/usr/bin/env bash
-# grade_lab1.sh - Student-run autograder for Linux Filesystem Lab
+# grade_lab2.sh - Student-run autograder for Linux Filesystem Lab
 # Course: CNG 2001
 # Lab: Linux Filesystem / Exploring Your Virtual Machine
 
 set -u
 
-LAB_DIR="$HOME/linux_lab"
+LAB_DIR="$HOME/linux_lab2"
 WEEK1_DIR="$LAB_DIR/projects/week1"
 INTRO_FILE="$LAB_DIR/intro.txt"
 PROJECT_INTRO="$WEEK1_DIR/project_intro.txt"
 NOTES_DIR="$LAB_DIR/notes"
 USERNAME="$(whoami)"
-RESULTS_FILE="lab1_results_${USERNAME}.txt"
+RESULTS_FILE="lab2_results_${USERNAME}.txt"
 
 score=0
 total=10
@@ -108,4 +101,3 @@ echo "Score: $score / $total"
 
 echo
 echo "Submission file created: $RESULTS_FILE"
-
